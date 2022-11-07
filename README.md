@@ -9,8 +9,10 @@ Live task to customize Matlab axes interactively
 ![image](https://user-images.githubusercontent.com/10243182/200378631-f49977eb-3e8a-47fc-8588-a734954518df.png)
 5. Insert the live task into your live Matlab script by clicking the live task button. Here is a usage example:
 ![image](https://github.com/altmany/CustomizeAxes/blob/main/CustomizeAxes%20Live%20task.png?raw=true)
+6. Whenever the customization code changes (when you modify any of the UI controls or the axes directly), the variable `code` in the base Matlab workspace is updated with the necessary customization commands. You can also view/copy this code from the source-code panel beneath the live task's UI controls panel.
 
 ## Running as a standalone dialog window
 CustomizeAxes can also run as a standalong window, using the syntax `CustomizeAxes(haxes)`, where hAxes is the requested axes handle. 
 You can also run `CustomizeAxes()` without an axes handle, allowing you to interactively select the requested axes.
+
 ![image](https://github.com/altmany/CustomizeAxes/blob/main/CustomizeAxes%20dialog%20window.png?raw=true)
